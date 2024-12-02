@@ -1,0 +1,865 @@
+{
+	"folders": [
+		{
+			"name": "OccupancyGridMapping",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/polarisdawn/UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "OccupancyGridMapping Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Debug",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Debug",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMapping Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Debug",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"DebugGame",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"DebugGame",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMapping Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"DebugGame",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Development",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Development",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMapping Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Development",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Test",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Test",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMapping Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Test",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Shipping",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Shipping",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMapping Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"Linux",
+					"Shipping",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Debug",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Debug",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMapping LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Debug",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMapping LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Development",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Development",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMapping LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Development",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Test",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Test",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMapping LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Test",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Shipping",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Shipping",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMapping LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMapping LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMapping",
+					"LinuxArm64",
+					"Shipping",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMappingEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMappingEditor",
+					"Linux",
+					"Debug",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMappingEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMappingEditor",
+					"Linux",
+					"Debug",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMappingEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMappingEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMappingEditor",
+					"Linux",
+					"Debug",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMappingEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMappingEditor",
+					"Linux",
+					"DebugGame",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMappingEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMappingEditor",
+					"Linux",
+					"DebugGame",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMappingEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMappingEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMappingEditor",
+					"Linux",
+					"DebugGame",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMappingEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMappingEditor",
+					"Linux",
+					"Development",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMappingEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMappingEditor",
+					"Linux",
+					"Development",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"OccupancyGridMappingEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			},
+			{
+				"label": "OccupancyGridMappingEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"OccupancyGridMappingEditor",
+					"Linux",
+					"Development",
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/polarisdawn/UnrealEngine"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch OccupancyGridMapping (Debug)",
+				"request": "launch",
+				"program": "/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/Binaries/Linux/UnrealGame-Linux-Debug",
+				"preLaunchTask": "OccupancyGridMapping Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/polarisdawn/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/polarisdawn/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch OccupancyGridMapping (DebugGame)",
+				"request": "launch",
+				"program": "/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/Binaries/Linux/UnrealGame-Linux-DebugGame",
+				"preLaunchTask": "OccupancyGridMapping Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/polarisdawn/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/polarisdawn/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch OccupancyGridMapping (Development)",
+				"request": "launch",
+				"program": "/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/Binaries/Linux/UnrealGame",
+				"preLaunchTask": "OccupancyGridMapping Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/polarisdawn/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/polarisdawn/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch OccupancyGridMapping (Test)",
+				"request": "launch",
+				"program": "/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/Binaries/Linux/UnrealGame-Linux-Test",
+				"preLaunchTask": "OccupancyGridMapping Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/polarisdawn/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/polarisdawn/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch OccupancyGridMapping (Shipping)",
+				"request": "launch",
+				"program": "/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/Binaries/Linux/UnrealGame-Linux-Shipping",
+				"preLaunchTask": "OccupancyGridMapping Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/polarisdawn/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/polarisdawn/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch OccupancyGridMappingEditor (Debug)",
+				"request": "launch",
+				"program": "/home/polarisdawn/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "OccupancyGridMappingEditor Linux Debug Build",
+				"args": [
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject"
+				],
+				"cwd": "/home/polarisdawn/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/polarisdawn/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch OccupancyGridMappingEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/polarisdawn/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "OccupancyGridMappingEditor Linux DebugGame Build",
+				"args": [
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject"
+				],
+				"cwd": "/home/polarisdawn/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/polarisdawn/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch OccupancyGridMappingEditor (Development)",
+				"request": "launch",
+				"program": "/home/polarisdawn/UnrealEngine/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "OccupancyGridMappingEditor Linux Development Build",
+				"args": [
+					"/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject"
+				],
+				"cwd": "/home/polarisdawn/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/home/polarisdawn/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/polarisdawn/UnrealEngine/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/polarisdawn/Documents/Unreal Projects/OccupancyGridMapping/OccupancyGridMapping.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/polarisdawn/UnrealEngine"
+			}
+		]
+	}
+}
